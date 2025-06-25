@@ -228,15 +228,34 @@ Figure 22
 
 Figure 23
 
-![image](https://github.com/user-attachments/assets/e40a8ae9-9345-4786-9dd8-7223248f81f7)  ![image](https://github.com/user-attachments/assets/dc7ad631-18b0-4ad4-be68-90220469835f)
+![image](https://github.com/user-attachments/assets/e40a8ae9-9345-4786-9dd8-7223248f81f7)  ![image](https://github.com/user-attachments/assets/3a9d2576-ea70-4911-8617-3e9a95a91619)
 
+Figure 24
 
+![image](https://github.com/user-attachments/assets/4ae31c62-3b3f-415e-ba8b-00e69228d15f) ![image](https://github.com/user-attachments/assets/07fa13d6-47b7-4e67-93b0-3f132e4f5d05)
 
+Figure 25
 
-
-
+![image](https://github.com/user-attachments/assets/cd6026aa-475c-4ed6-af98-4b9b1bf815c0)
 
 # AWS Cost Analysis 
+
+Figure 26
+
+![image](https://github.com/user-attachments/assets/8e76e089-1ec5-48f4-91ef-672c12c3b845)
+
+Figure 27
+
+_Case Study #5: AWS Pricing Calculator_
+
+![image](https://github.com/user-attachments/assets/dbf93716-e3b3-498b-ba82-1d0a1fecde58)
+
+![image](https://github.com/user-attachments/assets/7ea91305-4dbb-475b-8558-007e725bb18a)
+
+![image](https://github.com/user-attachments/assets/f9994e2e-6fbe-4087-b513-cc6296bc2959)
+
+
+
 
 # AWS Global infrastructure 
 
