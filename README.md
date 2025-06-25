@@ -126,12 +126,16 @@ Figure 17
 
 Figure 18
 
-Step 4: Data Cataloging
+# Step 4: Data Cataloging
+
 Analysis
+
 	The descriptive questions where analysed further and the metric for analysis is found.
+ 
  ![image](https://github.com/user-attachments/assets/51455f3c-44d1-4eef-b597-8253a2a94ff3)
 
 Figure 19
+
 Design
 
 ![image](https://github.com/user-attachments/assets/7cb7f10e-e5d4-4fa1-b841-7505b32e2011)
