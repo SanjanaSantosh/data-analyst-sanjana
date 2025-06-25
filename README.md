@@ -289,8 +289,32 @@ Figure 34
 
 # AWS VPC
 
+Figure 35
+
+![image](https://github.com/user-attachments/assets/67a64a78-713b-4347-acd7-07ad9244294c)
+
+Figure 36
+
+![image](https://github.com/user-attachments/assets/c738dd6e-136a-410d-916c-c5181fba4608)
+
 # AWS Lambda 
 
+Figure 37
+
+![image](https://github.com/user-attachments/assets/0903c268-23df-4235-a20f-6b07107270f9)
+
+Figure 38
+
+![image](https://github.com/user-attachments/assets/fb8bb2c6-2c1b-4dab-8854-026a0a7c1996)
+
 # AWS EBS
+
+Figure 39
+
+![image](https://github.com/user-attachments/assets/6491190d-6e41-4e98-a6be-3dc0b6426b5e)
+
+Figure 40
+
+![image](https://github.com/user-attachments/assets/c54d0d43-3ac8-405e-a492-a2b3ae76f2ae)
 
 
