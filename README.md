@@ -525,11 +525,14 @@ AWS Services Such as S3 , Glue, GlueBrew athena, Pricing Calculator was used for
 
 Figure 22
 
-![image](https://github.com/user-attachments/assets/10aecec6-bc05-49a1-b199-d86063ede191)
+![image](https://github.com/user-attachments/assets/4aa28153-b725-4f31-aa8b-47963d9f8bf4)
+
 
 Figure 23
 
-![image](https://github.com/user-attachments/assets/cd381dde-84df-4762-8be0-63501d123741)
+![image](https://github.com/user-attachments/assets/e40a8ae9-9345-4786-9dd8-7223248f81f7)  ![image](https://github.com/user-attachments/assets/dc7ad631-18b0-4ad4-be68-90220469835f)
+
+
 
 
 
