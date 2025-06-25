@@ -254,12 +254,29 @@ _Case Study #5: AWS Pricing Calculator_
 
 ![image](https://github.com/user-attachments/assets/f9994e2e-6fbe-4087-b513-cc6296bc2959)
 
+Figure 28
 
+![image](https://github.com/user-attachments/assets/fa1fa337-4f5a-498a-8192-fe7a057d2528)
 
+Figure 29
+
+![image](https://github.com/user-attachments/assets/d0bf2e13-0248-4585-b542-b179d33d544b)
 
 # AWS Global infrastructure 
 
+Figure 30
+
+![image](https://github.com/user-attachments/assets/1e629900-13be-4149-b0fe-dc8eb6def02d)
+
+Figure 31
+
+![image](https://github.com/user-attachments/assets/3d9c03e4-e7d2-43e0-b922-b3ee4917933c)
+
 # AWS IAM 
+
+Figure 32
+
+![image](https://github.com/user-attachments/assets/a512c58e-9fb0-499d-acfe-993a36539247)
 
 # AWS VPC
 
@@ -267,42 +284,4 @@ _Case Study #5: AWS Pricing Calculator_
 
 # AWS EBS
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
- 
 
