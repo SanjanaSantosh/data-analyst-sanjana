@@ -1,5 +1,6 @@
 # data-analyst-sanjana
 Overview of Cloud Computing Class
+
 # Project 
 
 I worked on a project to implement a DAP system for the City of Vanvouver in AWS Cloud. I worked on the current rental issues dataset. The main questions to be answered through this projetc was as follows:
@@ -32,6 +33,7 @@ The goal, objective and cause factors of each descriptive question was analysed.
 Figure 3
 
 **Design**
+
 	 The fishbone structure for anaylsing the causes was designed
   ![image](https://github.com/user-attachments/assets/9cf34f0f-3e59-47ec-8bfc-7ad94c6ad7a4)
 
@@ -56,6 +58,7 @@ The datalake design describes the location of the dataset and the Storage class 
  ![image](https://github.com/user-attachments/assets/3fd5b2e7-3a94-41f5-a6b2-016b0358f85c)
 
 Figure 7
+ 
  ![image](https://github.com/user-attachments/assets/044bc3e3-896c-40a4-ae3d-15dec3690c2e)
 
 Figure 8
@@ -94,13 +97,17 @@ Figure 13
 	The profiling job is successfully done which is indicated by the json file as a result of profiling.
 
 
-Step 3: Data Cleaning
-Analysis
+# Step 3: Data Cleaning
+
+**Analysis**
+
 The profiling job indicated the columns with issues which are listed below. Some columns had missing values we plan on rectifying them by removing the rows as only less than 5 values where missing. 
  ![image](https://github.com/user-attachments/assets/cbeb418b-8f1b-445e-8090-3fd5b7893db3)
 
 Figure 14
-Implementation
+
+**Implementation**
+
 The rows containing missing values in business operater and Geom was removed. As a result all the null values from the columns where removed. The following screenshots shows the recipe used for cleaning and the completed job.
  ![image](https://github.com/user-attachments/assets/2f7a1d27-01d1-4056-9a9a-b669c291ee73)
 
@@ -114,6 +121,7 @@ The results of the cleaning job are stored in two formats, one user-friendly for
  ![image](https://github.com/user-attachments/assets/4330a8d4-1b96-4217-b415-084b8198f410)
 
 Figure 17
+
  ![image](https://github.com/user-attachments/assets/2a24b276-54ca-4197-8f5c-0fe69fe4ded7)
 
 Figure 18
