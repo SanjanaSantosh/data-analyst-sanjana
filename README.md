@@ -3,7 +3,7 @@ Overview of Cloud Computing Class
 
 # Project 
 
-I worked on a project to implement a DAP system for the City of Vanvouver in AWS Cloud. I worked on the current rental issues dataset. The main questions to be answered through this projetc was as follows:
+I worked on a project to implement a DAP system for the City of Vanvouver in AWS Cloud. I worked on the current rental issues dataset. The main questions to be answered through this project was as follows:
 
 Which neighbourhoods in Vancouver have the highest number of Average total outstanding rental issues?
 
