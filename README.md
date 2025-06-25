@@ -138,7 +138,9 @@ Design
 
  
 Figure 20
+
 Implementation
+
 A third bucket prj-cur-sanj was created to store the curated dataset.
 The crawler is used to convert all semi-structured and unstructured datasets to table format. This tables are then stored in the data catalog folder (prj-data-catalog-san) as databases.
 
@@ -149,6 +151,7 @@ Figure 21
  ![image](https://github.com/user-attachments/assets/d7e777ff-ed71-4916-b161-aa9c8749c068)
 
 Figure 22
+
 	AWS Glue was used for ETL pipeline. That is to extract, transform and load the curated dataset. The ETL along with datacatalog is used for the generation of single source of truth (SSOT). 
 The dataset from the data catalog is initially source for Visual ETL. We then changed the schema of the dataset in the transformation phase by dropping unnecessary columns. Then the curated bucket is used as target generate the system friendy and user friendly outputs of the SSOT. In this case SSOT is jobrenstd. This SSOT is used for the analysis of descriptive questions. 
 
@@ -160,21 +163,30 @@ Figure 23
 
  
 Figure 24
-Step 5: Data Summarization 
-Analysis
+
+# Step 5: Data Summarization 
+
+**Analysis**
+
 ![image](https://github.com/user-attachments/assets/57c1003e-729b-4200-8dbf-e5d5ff6d5271)
 
- 
 Figure 25
+
 Implementation
+
 	AWS Athena is used for summarization. And the sql queries are used in athena to get the results for our descriptive questions. 
 The First descriptive question 
+
 Which neighbourhoods in Vancouver have the highest number of Average total outstanding rental issues? 
+
 As per the analysis from athena we can see that Killarney is the neighbourhood with highest number of Average total outstanding rental issues
+
 ![image](https://github.com/user-attachments/assets/50db40e8-b2ee-4edc-bbfe-50890e8c8260)
 
 Figure 26
+
 Which Vancouver neighbourhoods have the largest number of rental units involved in reported issues?
+
 As per our analysis the same neighbourhood ie killarney, is found to have the largest number of rental units involved in reported issues.
 
 ![image](https://github.com/user-attachments/assets/28d777f5-b099-4ad4-8e99-95d45f1bcd57)
@@ -182,50 +194,61 @@ As per our analysis the same neighbourhood ie killarney, is found to have the la
  Figure 27
 
 
-**Step 6: Data Security**
+# Step 6: Data Security
+
 For the security of the data from the city of Vancouver in AWS we have used encryption and decryption process using Key Management Service in AWS. This service enables us to create a key that can be used for the encryption and decryption process. The figure below shows the Key that we have created. This key that we have created can be used to encrypt and decrypt our data during uploading and downloading, respectively, in different buckets such as raw, clean, and curated buckets.
+
 Figure 28
-Key Management Service
+
+_Key Management Service_
 
 ![image](https://github.com/user-attachments/assets/6e33db09-23d3-4d2f-abe7-60a36d0bd72e)
 
  
 We have edited the Encryption in the raw bucket to the key we have created so that the data is encrypted during upload to the bucket and is decrypted when it is downloaded by the user with the encryption key.
 We have also enabled bucket versioning. This creates multiple versions of the file ie, after each change a new file is created rather than deleting the old file. This provides multiple copies of the file. The same procedure of Data encryption and Bucket versioning is repeated for the clean bucket as well as the curated bucket.
+
 Figure 29
-Raw Bucket: Data Encryption and Bucket Versioning
+
+_Raw Bucket: Data Encryption and Bucket Versioning_
 
 ![image](https://github.com/user-attachments/assets/5a202371-b3f3-46fd-9a71-869e080fde8b)
 
  
 All the objects in the raw bucket are replicated to a backup bucket (prj-raw-bac-sanj). This is done to protect the data from being lost or accidentally deleted. This backup bucket is also encrypted. For this, we use the replication rule. 
 This is also done for the clean and curated bucket.
+
 Figure 35
-Raw Bucket: Replication Technique
+
+_Raw Bucket: Replication Technique_
 
 ![image](https://github.com/user-attachments/assets/18a99d4d-e622-49b8-95f1-3d61c8c14305)
 
  
 Figure 30
-Clean Bucket: Data Encryption and Bucket Versioning
+
+_Clean Bucket: Data Encryption and Bucket Versioning_
 
 ![image](https://github.com/user-attachments/assets/b93bae79-3c75-4065-84df-a2cc021924ef)
 
 
-  Figure 31
-Clean Bucket: Replication Technique
+Figure 31
+  
+_Clean Bucket: Replication Technique_
 
 ![image](https://github.com/user-attachments/assets/e0f84abf-cada-4724-8f2d-5e3527846e30)
 
  
 Figure 32
-Curated Bucket: Data Encryption and Bucket Versioning
+
+_Curated Bucket: Data Encryption and Bucket Versioning_
 
 ![image](https://github.com/user-attachments/assets/7224fc33-3621-4f17-a66f-e4e93639fdc0)
 
  
 Figure 33
-Curated Bucket: Replication Technique
+
+_Curated Bucket: Replication Technique_
 
 ![image](https://github.com/user-attachments/assets/4f21b0e7-3073-4cd5-931e-e87b211a58bb)
 
