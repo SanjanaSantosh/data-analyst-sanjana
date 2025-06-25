@@ -222,36 +222,47 @@ Curated Bucket: Replication Technique
 ![image](https://github.com/user-attachments/assets/4f21b0e7-3073-4cd5-931e-e87b211a58bb)
 
  
-Step 7: Data Governance
+# Step 7: Data Governance
+
 We have implemented data quality in the data governance section. For this, I have used the AWS Glue service. 
 In AWS Glue, Visual ETL was used to create the pipeline. Initially, the data from the raw bucket was extracted, and it was used as the source. Then, the data quality of the CSV file in the raw bucket was checked. For this, we mainly considered parameters such as completeness, uniqueness, and freshness of data. Then, a new column was added to check which columns passed the quality check and which didn’t. A conditional router was then used to split the data into two groups, with one containing the passed rows and the other containing the failed rows. We had around 30 rows that failed the quality check. The extra columns we added during quality check are then removed using the change schema option available in the transform. Then, for just creating one file rather than multiple small files, we used the Autobalance processing option. Finally, this file is saved in the transform bucket we created (pro-trf-sanj). The failed is stored in the failed folder within the Quality_check folder in the transform bucket, and the passed rows are in the passed bucket.
+
 Figure 34
-Visual ETL: Quality Control
+
+_Visual ETL: Quality Control_
 
 ![image](https://github.com/user-attachments/assets/7076e2ea-f0d3-4682-8658-03fc0290b825)
 
  
 Figure 35
-Passed Folder: Run output
+
+_Passed Folder: Run output_
+
 ![image](https://github.com/user-attachments/assets/bcb45dd8-bcf0-4033-8bc5-3d4e313fef36)
 
 Figure 36
-Failed Folder: Run output
+
+_Failed Folder: Run output_
 
 ![image](https://github.com/user-attachments/assets/e30864e3-082b-4cd2-93ff-85ec628a9d42)
 
  
-Step 8: Data Monitoring
+# Step 8: Data Monitoring
+
 For data monitoring, AWS CloudWatch was used. A monitoring dashboard(prj-ren-MCR-san) was created. The raw bucket bytes used within the last 3 months were tracked using the widget. Then we also created a widget for job run time in the Glue to track the performance. An alarm was also created to control the bucket byte used to not exceed a threshold of 300 KB, since we have already used around 150 KB. To get notified when it is exceeded, we created a notification topic and provided the email ID to which AWS will notify.
+
 Figure 37
-CloudWatch: Dashboard
+
+_CloudWatch: Dashboard_
 
 ![image](https://github.com/user-attachments/assets/8c8c0dc6-9730-48c7-8891-7a3f425ddbbf)
 
  
 For tracking user activity and creating a trail, CloudTrail was used. This helps us gather all activities within our account. If we check the event history option in CloudTrail, all actions done to date in the account can be tracked. This CloudTrail creates a log file of the activities done.
+
 Figure 38
-CloudTrail
+
+__CloudTrail_
 
 ![image](https://github.com/user-attachments/assets/63fadf5a-6855-45ba-8304-80f34ae203c6)
 
