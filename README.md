@@ -304,11 +304,94 @@ _CloudTrail_
 # UCW Dataset to AWS Cloud
 # Descriptive Analysis 
 
-Project Description : Descriptive analysis of Employee performance after training
+**Project Description** : Descriptive analysis of Employee performance after training
 
-Project Title : Improvement in Employee performance
+**Project Title** : Improvement in Employee performance
 
-Objective : The Primary goal of this project is to conduct a descriptive analysis to find the most effective training method to improve the performance of employees
+**Objective** : The Primary goal of this project is to conduct a descriptive analysis to find the most effective training method to improve the performance of employees
+
+**Dataset 1 (Training Attendance Records)** : It included the completetion status of each employees in different training topics
+
+TrainingID: The unique identifier for training an employee
+
+EmployeeID: The unique identifier of an employee
+
+TrainingDate: The date on which training was done
+
+TrainingTopic: The topic on which traing was done for the employees
+
+CompletionStatus : Status of Training
+
+**Dataset 2 (Employee Performance Metrics) :** 
+
+MetricID : Unique Identifier for tracking employee performance metrics
+
+EmployeeID: The unique identifier of an employee
+
+MetricDate: The date on which the performance was noted
+
+PerformanceScore: The performance score of each employees
+
+**Methodology**
+
+I created and implemented a DAP system in AWS cloud to answer these questions.
+
+For solving the descriptive question we initially analysed the data to find the cause and effects
+
+Figure 1 
+
+_FIshbone Design_
+
+![image](https://github.com/user-attachments/assets/bbc8924c-41d3-4f78-b2c1-f268a95d7fff)
+
+Then we designed the datalake it helps to assign the folder in which our data is to be placed and also it describes the region and storageclass we are planning to assign for our storage bucket.
+
+Figure 2
+
+_Datalake_
+
+![image](https://github.com/user-attachments/assets/3fd70593-c35e-42a9-9bfc-92ac04927491)
+
+Figure 3
+
+_DataLake Desgin_
+
+![image](https://github.com/user-attachments/assets/51a53de8-5b8d-4857-a66c-33d120f13f7e)
+
+This shows the operation environment and where exactly our dataset is located. Initially data is sent from the UCW HR team and then it is stored to a virtual server by uploading the data to a S3 Bucket in cloud.
+
+Initially we have to sign in to the AWS account and then we have to create a VPC. It provides a private network environment for UCW's cloud resources.
+
+Figure 4
+
+_VPC_
+
+![image](https://github.com/user-attachments/assets/53476a46-d67b-425a-873d-d13cc50805fd)
+
+Figure 5
+
+_Security Groups_
+
+![image](https://github.com/user-attachments/assets/c2cd341d-2bce-498f-bf68-005126cdd52c)
+
+Then security networks where set as it act as virtual firewalls that control network traffic to and from your instances, providing a crucial layer of security for your cloud environment.
+
+Figure 6
+
+_Instances_
+
+![image](https://github.com/user-attachments/assets/03bf21e9-0f3a-41e1-9324-bf000163465b)
+
+Then we set up instances in cloud ie a vortual
+
+
+
+
+
+
+
+
+
 
 
 
