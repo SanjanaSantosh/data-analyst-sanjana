@@ -434,6 +434,90 @@ _Employee Performance Metrics:  System Friendly (snappy)_
 
 ![image](https://github.com/user-attachments/assets/1a870e7f-a30b-4282-ae8a-95552278c030)
 
+**Evaluvation**
+
+We also evaluvated the cost of Implementing S3 storage and Glue Databrew services in AWS
+
+Figure 13
+
+_Cost Estimation for S3 storage_
+
+![image](https://github.com/user-attachments/assets/7c5daf9b-1064-424c-8ae5-b07723dcfba1)
+
+_Cost Estimation for Glue DataBrew_
+
+![image](https://github.com/user-attachments/assets/49d86ce4-8969-4be9-8b6a-37bc38970385)
+
+**Data Catalog**
+
+A third bucket hr-cur-sanj was created to store the curated dataset.
+The crawler is used to convert all semi-structured and unstructured datasets to table format. This tables are then stored in the data catalog folder (hr-data-catalog-san) as databases.
+
+Figure 14
+
+_Data catalog_
+
+![image](https://github.com/user-attachments/assets/a43b24d8-71be-415c-aba6-6f413935c7fb)
+
+Figure 15
+
+_Curated- User Friendly_
+
+![image](https://github.com/user-attachments/assets/e454b4b0-ab0d-4e09-a46b-572f112eed3c)
+
+Figure 16
+
+_Curated - Systems Friendly_
+
+![image](https://github.com/user-attachments/assets/daabaa01-95de-4f5f-8054-d0bb06ffba99)
+
+
+
+**Dataset Enriching and Summarization**
+
+Our main aim is to create a dataset that can answer the business questions we have. This dataset is called as Single source of truth(SSoT). So to attain it we might have to join 2 or more datsets together. This process is called enriching. We follow an ETL pipeline to achive this in AWS.
+
+Figure 17
+
+_ETL Design_
+
+![image](https://github.com/user-attachments/assets/64624629-f112-4152-b909-2ffa246821de)
+![image](https://github.com/user-attachments/assets/d79ae27e-e91b-48a6-a06b-c29ae4b9b589)
+
+Figure 18
+
+_ETL Desgin in DAP_
+
+![image](https://github.com/user-attachments/assets/6bd01adc-efa0-48cc-9821-1b2f6270e323)
+
+After desging the DAP we initially set an alarm in AWS to notify us if the Cost exceeds a certain limit. CloudWactch serve was user for setting up this alarm.
+
+Figure 19
+
+_ALarm_
+
+![image](https://github.com/user-attachments/assets/71f455a1-518a-4b32-84a5-83f1dd4b5912)
+
+Then we prepared a Visual ETL to join the two dataset using inner joint to create the single source of truth
+
+Figure 20
+
+_VIsual ETL_
+
+![image](https://github.com/user-attachments/assets/45e65775-f572-4ada-9b3a-c32691cfbdae)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
