@@ -297,9 +297,20 @@ For tracking user activity and creating a trail, CloudTrail was used. This helps
 
 Figure 38
 
-__CloudTrail_
+_CloudTrail_
 
 ![image](https://github.com/user-attachments/assets/63fadf5a-6855-45ba-8304-80f34ae203c6)
+
+# UCW Dataset to AWS Cloud
+# Descriptive Analysis 
+
+Project Description : Descriptive analysis of Employee performance after training
+
+Project Title : Improvement in Employee performance
+
+Objective : The Primary goal of this project is to conduct a descriptive analysis to find the most effective training method to improve the performance of employees
+
+
 
  
 
