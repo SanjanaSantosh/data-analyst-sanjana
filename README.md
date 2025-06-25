@@ -334,6 +334,8 @@ PerformanceScore: The performance score of each employees
 
 **Methodology**
 
+**Data Ingestion**
+
 I created and implemented a DAP system in AWS cloud to answer these questions.
 
 For solving the descriptive question we initially analysed the data to find the cause and effects
@@ -382,7 +384,63 @@ _Instances_
 
 ![image](https://github.com/user-attachments/assets/03bf21e9-0f3a-41e1-9324-bf000163465b)
 
-Then we set up instances in cloud ie a vortual
+Then we set up instances in cloud ie a virtual machine to implemen tasks
+
+Then in the storage ie S3 we created a raw bucket(hr-raw-sanj) to store the data. Then the datasets were stored in this folder as per the datalake desgin
+
+**Dataset Profiling and Cleaning** 
+
+**Analysis & Design**
+
+After the data is stored in Cloud the next step is to Clean the datasets. For cleaning dataset we used AWS databrew. We initially did data profiling to check the irregularities in the datasets. As per the profiling both datasets were clean and had no missing values or outliers
+
+Figure 7
+
+_Data Profile for Employee Performance Metrics_
+
+![image](https://github.com/user-attachments/assets/e14cfabb-c8ea-4ec7-8790-d58e0e2d673c)
+
+Figure 8
+
+_Data Profile for Training Attendance Records_
+
+![image](https://github.com/user-attachments/assets/9c5270ef-b58a-4c78-87cc-b4a61ca9af6c)
+
+**Dataset Cleaning Implementation**
+
+Then we saved the clean dataset to a new S3 bucket called hr-cln-san. This was saved in two formats one user friendly format ie CSV and other in snappy compression for the systems friendly format. 
+
+Figure 9
+
+_Training Attendence Records: User Friendly(csv)_
+
+![image](https://github.com/user-attachments/assets/4b717533-2649-428d-a72a-02da73d80038)
+
+Figure 10
+
+_Training Attendence Records: System Friendly (snappy)_
+
+![image](https://github.com/user-attachments/assets/fe94e6bd-e547-4052-85e2-9530c1b9d418)
+
+Figure 11
+
+_Employee Performance Metrics:  User Friendly(csv)_
+
+![image](https://github.com/user-attachments/assets/c4837338-54c4-4085-9642-6bb5a50fb946)
+
+Figure 12
+
+_Employee Performance Metrics:  System Friendly (snappy)_
+
+![image](https://github.com/user-attachments/assets/1a870e7f-a30b-4282-ae8a-95552278c030)
+
+
+
+
+
+
+
+
 
 
 
