@@ -450,7 +450,7 @@ _Cost Estimation for Glue DataBrew_
 
 **Data Catalog**
 
-A third bucket hr-cur-sanj was created to store the curated dataset.
+A third bucket hr-cur-sanj was created to store the curated dataset. AWS Glue was used for this.
 The crawler is used to convert all semi-structured and unstructured datasets to table format. This tables are then stored in the data catalog folder (hr-data-catalog-san) as databases.
 
 Figure 14
@@ -490,7 +490,7 @@ _ETL Desgin in DAP_
 
 ![image](https://github.com/user-attachments/assets/6bd01adc-efa0-48cc-9821-1b2f6270e323)
 
-After desging the DAP we initially set an alarm in AWS to notify us if the Cost exceeds a certain limit. CloudWactch serve was user for setting up this alarm.
+After desging the DAP we initially set an alarm in AWS to notify us if the Cost exceeds a certain limit. CloudWatch serve was user for setting up this alarm.
 
 Figure 19
 
@@ -498,13 +498,58 @@ _ALarm_
 
 ![image](https://github.com/user-attachments/assets/71f455a1-518a-4b32-84a5-83f1dd4b5912)
 
-Then we prepared a Visual ETL to join the two dataset using inner joint to create the single source of truth
+Then we prepared a Visual ETL to join the two dataset using inner joint to create the single source of truth. A common column is required for merging two datasets. In our datasetthe common column is employee id
 
 Figure 20
 
 _VIsual ETL_
 
 ![image](https://github.com/user-attachments/assets/45e65775-f572-4ada-9b3a-c32691cfbdae)
+
+Finally the single source of truth from the ETL pipeline is used to answer the Business questions. AThena ia used for this. In Athena we use Sql 
+
+Figure 21
+
+_Athena_
+
+![image](https://github.com/user-attachments/assets/598ed210-48f4-46b2-a0d7-9976e8a5b143)
+
+**Tools and Technologies:**
+Excel for initial data storage and analysis
+
+Draw.io for designing
+
+AWS Services Such as S3 , Glue, GlueBrew athena, Pricing Calculator was used for implementation
+
+# AWS Deployment and Service Models 
+
+Figure 22
+
+![image](https://github.com/user-attachments/assets/10aecec6-bc05-49a1-b199-d86063ede191)
+
+Figure 23
+
+![image](https://github.com/user-attachments/assets/cd381dde-84df-4762-8be0-63501d123741)
+
+
+
+
+
+# AWS Cost Analysis 
+
+# AWS Global infrastructure 
+
+# AWS IAM 
+
+# AWS VPC
+
+# AWS Lambda 
+
+# AWS EBS
+
+
+
+
 
 
 
