@@ -278,6 +278,15 @@ Figure 32
 
 ![image](https://github.com/user-attachments/assets/a512c58e-9fb0-499d-acfe-993a36539247)
 
+Figure 33
+
+![image](https://github.com/user-attachments/assets/fb18faa1-afbb-4706-ba5a-47797b2388d1)
+
+Figure 34 
+
+![image](https://github.com/user-attachments/assets/83087d3a-5cf1-4e5f-92fd-c39216e44875)
+
+
 # AWS VPC
 
 # AWS Lambda 
